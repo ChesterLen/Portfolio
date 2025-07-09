@@ -2,18 +2,47 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 </head>
+
 <body>
-    <header></header>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Svetoslav Baykov</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h2>Hello, I’m <span>Svetoslav Baykov</span></h2>
+            <p>Backend Developer | Django, APIs, Cloud & DevOps</p>
+            <a href="#projects" class="btn primary">See My Work</a>
+        </div>
+    </header>
     <main class="site-main">
         {% block content %}
         {% endblock %}
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Svetoslav Baykov</p>
+            <div class="social">
+                <a href="https://github.com/yourname" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
