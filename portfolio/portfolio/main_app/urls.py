@@ -2,4 +2,6 @@ from django.urls import path
 from portfolio.main_app import views
 
 
-urlpatterns = []
+urlpatterns = [
+    path('', views.HomePageView.as_view(), name='home_page'),
+]
