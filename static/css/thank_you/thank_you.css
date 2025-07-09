@@ -21,3 +21,7 @@ body {
     padding: 3em;
     border-radius: 5px;
 }
+
+.thank-you p {
+    color: #007bff;
+}
