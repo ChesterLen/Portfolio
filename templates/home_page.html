@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/home/home.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Svetoslav Baykov</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h2>Hello, I’m <span>Svetoslav Baykov</span></h2>
+            <p>Backend Developer | Django, APIs, Cloud & DevOps</p>
+            <a href="#projects" class="btn primary">See My Work</a>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section id="about" class="section">
+            <div class="container">
+                <h3>About Me</h3>
+                <p>I specialize in building secure, scalable web applications using Django and modern backend tools. I
+                    focus on
+                    clean architecture, async operations (Celery/Redis), and cloud deployment (Docker, AWS, Nginx).</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h3>Tech Stack</h3>
+                <div class="grid skills-grid">
+                    <div class="card">Django</div>
+                    <div class="card">REST APIs</div>
+                    <div class="card">OAuth2</div>
+                    <div class="card">Celery & Redis</div>
+                    <div class="card">Docker</div>
+                    <div class="card">AWS</div>
+                    <div class="card">Gunicorn/Nginx</div>
+                    <div class="card">HTML/CSS/JS</div>
+                    <div class="card">Stripe</div>
+                    <div class="card">SOLID Principles</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h3>Projects</h3>
+                <div id="projects-grid" class="grid projects-grid">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h3>Contact</h3>
+                <form id="contact-form" class="form" action="https://formsubmit.co/radiationnnnnn@gmail.com" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn secondary">Send</button>
+                    <p id="form-msg" class="form-msg"></p>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/templates/thank_you.html">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Svetoslav Baykov</p>
+            <div class="social">
+                <a href="https://github.com/yourname" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
