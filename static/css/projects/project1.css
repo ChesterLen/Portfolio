@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main {
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #fdfdfd;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60vw;
+}
+
+.container h1 {
+    margin-left: auto;
+}
+
+.container a {
+    margin-left: 3.5em;
+}
+
+.navbar {
+    background: #111;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.project-images {
+    margin-top: 1em;
+}
+
+.project-images .images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.project-images .images img {
+    width: 700px;
+    height: 350px;
+    border: 1px #dbdada solid;
+}
+
+.empty-div {
+    width: 700px;
+    height: 500px;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer .social a {
+    margin: 0 0.5rem;
+    color: #007bff;
+}
