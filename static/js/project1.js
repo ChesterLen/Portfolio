@@ -1,3 +1,12 @@
+const URL = window.location.href;
+const title = document.querySelector('title');
+
+if (String(URL).includes('project1')) {
+    title.textContent = 'Gem & Jewelry Online Shop';
+} else if (String(URL).includes('project2')) {
+    title.textContent = 'The T-shirt Store';
+}
+
 const images = document.querySelectorAll('img');
 let enlargedImg = null;
 
