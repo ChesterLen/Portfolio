@@ -47,7 +47,7 @@ a {
 }
 
 .project-images {
-    margin-top: 1em;
+    margin: 1em auto;
 }
 
 .project-images .images {
